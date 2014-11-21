@@ -1,4 +1,25 @@
 <!DOCTYPE html>
 <html>
-
+    <head>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       <script src="menu.js"></script>
+       <script src="load.js"></script>
+       <link rel="stylesheet" href="styles.css">
+       <title>Slide Show Editor</title>
+    </head>
+    <body>
+        <div id="inspector">
+            <img id="inspector_tab" src="img/inspectortab.png" height="128" width="64" />
+            <h2 style="position: relative; margin-top: 0px">Object Inspector</h2>
+        </div>
+        <div id="filemenu">
+            <img id="filemenu_tab" src="img/filetab.png" height="64" width="128" />
+            <h2 style="position: relative; margin-top: 0px; text-align: center; font-size: 25pt; font-family: Impact"><b>File Menu</b></h2>
+            <div class="filemenu_button" style="border-top: 2px solid #D8D8D8;" id="load">Load</div>
+            <input type="file" id="loadform" onchange="parseXML()"/><br>
+            <div class="filemenu_button">New</div><br>
+            <div class="filemenu_button">Download</div>
+        </div>
+        <iframe id="frame">gotta use iframes bro</iframe>
+    </body>
 </html>

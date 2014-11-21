@@ -1,0 +1,13 @@
+html,body{height: 100%; width:100%;}
+
+#inspector {display: block; width: 20%; height: 90%; right: -21%; position:absolute; border: 2px solid red; z-index: 40;}
+#inspector_tab{position: absolute; left: -16%;}
+
+#filemenu {display: block; width: 20%; height: 50%; left: 0%; top: -52%; position:absolute;  border: 2px solid green; z-index: 10;}
+#filemenu_tab{position: absolute; top: 100%;}
+.filemenu_button {display: block; width: 100%; height: 10%; font-size: 20pt; font-family: Impact,Arial; background-color: #F5F5F5; border-left: 2px solid #D8D8D8;border-right: 2px solid #D8D8D8; border-bottom: 2px solid #D8D8D8;}
+.filemenu_button:hover {background-color: ##d8d8d8;box-shadow: 10px 10px 5px #888888;}
+
+#loadform {display: none; }
+
+#frame {position: absolute; left: 12%; top: 5%;  width: 64%;height: 0;padding-bottom: 36%;}
