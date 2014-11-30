@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
        <script src="menu.js"></script>
        <script src="load.js"></script>
+       <script src="/iframeResizer.min.js"></script>
        <link rel="stylesheet" href="styles.css">
        <title>Slide Show Editor</title>
     </head>
@@ -16,10 +17,14 @@
             <img id="filemenu_tab" src="img/filetab.png" height="64" width="128" />
             <h2 style="position: relative; margin-top: 0px; text-align: center; font-size: 25pt; font-family: Impact"><b>File Menu</b></h2>
             <div class="filemenu_button" style="border-top: 2px solid #D8D8D8;" id="load">Load</div>
-            <input type="file" id="loadform" onchange="parseXML()"/><br>
+            <div class="filemenu_button" style="border-top: 2px solid #D8D8D8; display:none" id="loadbutton" onclick="document.getElementById('loadform').click();">Click To Select Project Folder</div><br>
             <div class="filemenu_button">New</div><br>
             <div class="filemenu_button">Download</div>
         </div>
-        <iframe id="frame">gotta use iframes bro</iframe>
+        <iframe id="frame" src="about:blank">gotta use iframes bro</iframe>
+        <input type="file" id="loadform" onchange="parseXML()" value="Choose Slideshow Folder" webkitdirectory directory multiple/>
+        <div id="timeline">
+            
+        </div>
     </body>
 </html>

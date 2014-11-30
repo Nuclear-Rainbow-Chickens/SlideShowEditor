@@ -2,6 +2,9 @@ $(document).ready(function($) {
     var inspectorOut = false;
     var filemenuOut = false;
     
+    $("#frame").css("height",parseInt($("#frame").css("width")) * 9 / 16);
+    
+    
     $("#inspector_tab").click(function() {
         inspectorOut = !inspectorOut;
         if(inspectorOut) {
@@ -23,6 +26,6 @@ $(document).ready(function($) {
         
     });
     $("#load").click(function() {
-        $("#loadform").fadeToggle(1000);
+        $("#loadbutton").fadeToggle(1000);
     });
 });
